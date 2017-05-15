@@ -24,7 +24,7 @@ Note, this is all one line in the terminal even if it is broken up into two line
 
 **Step 4** - Get git and set it up
 
-1. Make sure you have [git](http://git-scm.com/downloads "Github's download page")
+1. Make sure you have [git](http://git-scm.com/downloads "Github's download page").
 It generally comes pre-installed with most operating systems, but you can check by running `git version` on terminal. If you do not already have git installed, you can get it by typing `brew install git` on your terminal.
 
 2. Run `ssh-keygen` to create a new SSH key. If you do not already have an SSH key setup, you'll be asked to select a location and a passphrase. Just leave everything blank and press enter for default location and no passphrase. If you're asked if you want to overwrite, then you already have an SSH key and you do not want to overwrite it.
@@ -38,11 +38,13 @@ You're also going to want to let the git that is running on your machine to know
 `config --global user.name "Your Name"`
 
 **Step 5** - Support Libraries
+
+
 Next we're going to add a few support libraries with the following lines: `brew install gmp` and `brew install gnupg` Note: If you get the following error: `Warning: gnupg-1.4.19` already installed, it's just not linked simply run: `brew link gnupg`.
 
  **Step 6** - Install Ruby Version Manager
 
-[RVM](http://rvm.io/) is a great tool that lets you run different versions of Ruby on your computer. This is really useful because if you know one project your working on works with Ruby version 2.1.0 and another needs 2.3.0, you can easily switch between the two versions when you switch between projects. You can install it and set it up with the following commands:
+[RVM](http://rvm.io/) is a great tool that lets you run different versions of Ruby on your computer. This is really useful because if you know one project your working on works with Ruby version 2.1.0 and another needs 2.3.1, you can easily switch between the two versions when you switch between projects. You can install it and set it up with the following commands:
 
 1. Run `curl -sSL https://get.rvm.io | bash` -make sure you do not use `sudo`
 
@@ -98,7 +100,7 @@ You'll be using a couple of different databases as you move through the web deve
 
 1. SQLite: `brew install sqlite`
 
-2. Postgre: Install the Postgres app at: [Postgres.app](http://postgresapp.com/)
+2. Postgres: Install the Postgres app at: [Postgres.app](http://postgresapp.com/)
 
 
 **Step 12** - Install Rails
@@ -115,7 +117,7 @@ Now let's get your node version manager installed. Node is a package manager for
 
 3. as well as `echo '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"' >> ~/.bash_profile`
 
-4. lastly run `~/.bash_profile`. This will refresh your shell after making all the changes. This way you wont have to quit terminal and open it again.
+4. lastly run `source ~/.bash_profile`. This will refresh your shell after making all the changes. This way you wont have to quit terminal and open it again.
 
 
 **Step 15** - Install Java
