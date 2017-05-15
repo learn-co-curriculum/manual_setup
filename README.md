@@ -147,4 +147,4 @@ These dotfiles do a variety of different things and I highly recommend you downl
 
 7. Backup your `.gitconfig` file with `mv ~/.gitconfig{,.bak}`.
 
-8. `curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/gitconfig" -o "$HOME/.gitconfig"` then `nano ~/.gitconfig` and edit what needs to be edited (github username and github email in a few places)
+8. `curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/gitconfig" -o "$HOME/.gitconfig"` then `atom ~/.gitconfig` (you can access this file with the editor of your choosing) and edit what needs to be edited (github username and github email in a few places).
