@@ -1,20 +1,32 @@
 # Set up Instructions
 
-**Step 1** - Download Xcode
+**Step 1** - Delete the LearnIDE
 
-  1.Go to the App Store
+From this point forward we wont be using the LearnIDE anymore. In a later step we will have you choose an editor of your choice but for now go into your App folder and Delete the IDE. Also make sure you empty your trash afterwards. If the IDE is not in the app folder follow these steps:
 
-  2.Search for xcode, it should be the first one on the top-left corner.
+1. Use the `cmd + space` to search for the LearnIDE. DO NOT CLICK ANYTHING YET!
 
-  3.Click Download!
+2. Scroll all the way down until you see "show all in finder", proceed by clicking it.
+
+3. Now finder should have opened up and the LearnIDE should be one of the first items. Go ahead and Delete it.
+
+4. Now empty your trash.
+
+**Step 2** - Download Xcode
+
+1. Go to the App Store
+
+2. Search for xcode, it should be the first one on the top-left corner.
+
+3. Click Download!
 
 This will allow you to compile software locally. After installing Xcode, open it and accept the license file when prompted. Note, Xcode is a massive 3 or so GB, so it may take some time to download depending on your internet connection.
 
-**Step 2** - Open your Terminal
+**Step 3** - Open your Terminal
 
 Open up your terminal. This is where we are going to be doing most of our installation steps! On Mac, you can open up your terminal by going to Applications > Utilities > Terminal, or by using the quick launch (`cmd + space`) and just start typing "Terminal".
 
-**Step 3** - Install Homebrew
+**Step 4** - Install Homebrew
 
 Install the Homebrew package manager. You can do this by entering the following command into your terminal:
 
@@ -22,7 +34,7 @@ Install the Homebrew package manager. You can do this by entering the following 
 
 Note, this is all one line in the terminal even if it is broken up into two lines here in your browser.
 
-**Step 4** - Get git and set it up
+**Step 5** - Get git and set it up
 
 1. Make sure you have [git](http://git-scm.com/downloads "Github's download page").
 It generally comes pre-installed with most operating systems, but you can check by running `git version` on terminal. If you do not already have git installed, you can get it by typing `brew install git` on your terminal.
@@ -37,12 +49,11 @@ You're also going to want to let the git that is running on your machine to know
 `git config --global user.email "you@example.com"` and
 `config --global user.name "Your Name"`
 
-**Step 5** - Support Libraries
-
+**Step 6** - Support Libraries
 
 Next we're going to add a few support libraries with the following lines: `brew install gmp` and `brew install gnupg` Note: If you get the following error: `Warning: gnupg-1.4.19` already installed, it's just not linked simply run: `brew link gnupg`.
 
- **Step 6** - Install Ruby Version Manager
+ **Step 7** - Install Ruby Version Manager
 
 [RVM](http://rvm.io/) is a great tool that lets you run different versions of Ruby on your computer. This is really useful because if you know one project your working on works with Ruby version 2.1.0 and another needs 2.3.1, you can easily switch between the two versions when you switch between projects. You can install it and set it up with the following commands:
 
@@ -56,8 +67,7 @@ Next we're going to add a few support libraries with the following lines: `brew 
 
 5. Check that everything worked by running `ruby -v` and `rvm list`. This should output the version of ruby you're using (2.3.1) and the list of versions available with your RVM install.
 
-
-**Step 7** - Install some ruby gems
+**Step 8** - Install some ruby gems
 
 Ruby gems are pre written, stand alone, chunks of code that have been written and made easily accessible to you.
 
@@ -67,14 +77,13 @@ Ruby gems are pre written, stand alone, chunks of code that have been written an
 
 3. Install the gem bundler. This gem takes care of installing all the other gems you need for projects: `gem install bundler`
 
-
-**Step 8** - Setup the Learn gem
+**Step 9** - Setup the Learn gem
 
 Now we need to setup the Learn gem. Type the following into your terminal: `learn whoami`
 
 This will prompt you to set up the Learn gem. Note: When the gem asks you to go to learn.co/your-github-username, you must be logged in to be able to retrieve your token.
 
-**Step 9** - Get a Text Editor
+**Step 10** - Get a Text Editor
 
 Get a Text Editor. We suggest [Atom Text Editor](https://atom.io/)
 
@@ -84,7 +93,7 @@ You can then change your editor from `subl` to `atom`
 
 You can also set the default location that Learn will save all your labs. Save and close the file. Note: These settings only trigger when you use the Open button in Learn or when you use the `learn open` command. You can always manually clone your labs to any location you wish and open them with any text editor without having to edit this config file.
 
-**Step 10** - Install some more gems!
+**Step 11** - Install some more gems!
 
 If you're going to be doing web development on Learn, you're going to want to install a couple more gems.
 
@@ -92,9 +101,7 @@ If you're going to be doing web development on Learn, you're going to want to in
 
 2. Nokogiri is a gem that let's us scrape websites and you'll definitely want to be able to use it. Let's install it with: `gem install nokogiri` .If you encounter any errors while install this gem, check out the [Nokogiri support docs for Mac OSX](http://www.nokogiri.org/tutorials/installing_nokogiri.html#mac_os_x) installs. If you check out that page an you still have issues, contact support for help.
 
-
-
-**Step 11** - Get some databases
+**Step 12** - Get some databases
 
 You'll be using a couple of different databases as you move through the web development track. The default database that rails uses is SQLite. We also frequently see that students want to deploy their apps to the free hosting service [Heroku](http://www.heroku.co) To do this though, you'll need to be using Postgres instead. It's best of we just install both of them now so you can use either one.
 
@@ -103,11 +110,11 @@ You'll be using a couple of different databases as you move through the web deve
 2. Postgres: Install the Postgres app at: [Postgres.app](http://postgresapp.com/)
 
 
-**Step 12** - Install Rails
+**Step 13** - Install Rails
 
 Finally, rails! The powerful ruby web framework. We can install that with: `gem install rails`
 
-**Step 13** - Node
+**Step 14** - Node
 
 Now let's get your node version manager installed. Node is a package manager for JavaScript.
 
@@ -118,7 +125,6 @@ Now let's get your node version manager installed. Node is a package manager for
 3. as well as `echo '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"' >> ~/.bash_profile`
 
 4. lastly run `source ~/.bash_profile`. This will refresh your shell after making all the changes. This way you wont have to quit terminal and open it again.
-
 
 **Step 15** - Install Java
 Next, we'll want to install the latest version of the Java Development Kit. To get that, head on over to the [download page](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and select the Java SE Development Kit for Mac OSX and install it.
