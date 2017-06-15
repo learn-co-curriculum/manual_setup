@@ -13,6 +13,7 @@ From this point forward we wont be using the LearnIDE anymore. In a later step w
 4. Now empty your trash.
 
 **Step 2** - Download Xcode
+**For In-Person Immersive students, this step must be completed before your first day at Flatiron.**
 
 1. Go to the App Store
 
