@@ -10,7 +10,9 @@ From this point forward we wont be using the LearnIDE anymore. In a later step w
 
 3. Now finder should have opened up and the LearnIDE should be one of the first items. Go ahead and Delete it.
 
-4. Now empty your trash.
+4. Open up Atom. At the top of the screen click **Atom** then click **Preferences** then click **Packages** on the sidebar of the page that opens. If there are any Installed Packages that are from Learn, click the trashcan icon to delete them.
+
+5. Now empty your trash.
 
 **Step 2** - Download Xcode
 **For In-Person Immersive students, this step must be completed before your first day at Flatiron.**
