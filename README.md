@@ -1,6 +1,6 @@
 # Set up Instructions
 
-The setup instructions for **in person immersive students** can be found [in this help center article](http://help.learn.co/workflow-tips/local-environment/mac-osx-manual-environment-set-up)
+The setup instructions for **in person immersive students** can be found [in this help center article](http://help.learn.co/technical-support/local-environment/mac-osx-manual-environment-set-up)
 
 Instructions for the **IDE and online students** can be found [in this help center article](http://help.learn.co/the-learn-ide/the-basics-of-the-learn-ide/using-the-ide-versus-a-local-environment)
 
